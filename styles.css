@@ -1,0 +1,84 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: hotpink;
+  font-family: "Poppins", sans-serif;
+  padding: 16px;
+  height: 100%;
+}
+
+.card {
+  border: none;
+  border-radius: 10px;
+  border-width: thin;
+  /* border-color: hotpink; */
+  background-color: #fadadd;
+  padding: 1.25rem;
+  height: 100%;
+  box-shadow: 5px 5px 15px black;
+  /* display: flex;
+  align-content: center;
+  justify-content: center;
+  justify-content: space-evenly; */
+}
+
+.timer{
+  font-size: 20px;
+  color: red;
+  animation: animate  
+                0.875s linear infinite; 
+}
+
+@keyframes animate { 
+            0% { 
+                opacity: 0; 
+            } 
+  
+            50% { 
+                opacity: 0.7; 
+            } 
+  
+            100% { 
+                opacity: 0; 
+            } 
+        } 
+
+.info {
+  margin: 0 20px;
+}
+.text-body {
+  text-wrap: wrap;
+}
+.image {
+  display: flex;
+  margin-bottom: 12px;
+}
+img {
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .card {
+    padding: 1rem;
+  }
+  .give {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* @media screen and (max-width: 576px) {
+  .card {
+    padding: 0.75rem;
+  }
+
+  .give {
+    flex-direction: column;
+  }
+} */
